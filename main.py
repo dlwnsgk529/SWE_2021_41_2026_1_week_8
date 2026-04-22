@@ -1,19 +1,13 @@
 from typing import List
 
 def even_list(int_list: List[int]) -> List[int]:
-    """
-    Determines if a number is even and return an even list.
+    new_list = []
 
-    Args:
-        int_list: A list of integer.
-
-    Returns:
-        A list of even integers.
-    """
-
-    # TODO : Implement even_list
-
-    pass
+    for x in int_list:
+        if(x%2 == 0):
+            new_list.append(x)
+    
+    return new_list
 
 def sum_of_squares_of_even(even_int_list: List[int]) -> int:
 
